@@ -13,6 +13,7 @@ public class Rectangle extends Shape{
     public Rectangle(double a, double b){
         this.L1=a;
         this.L2=b;
+
     }
 
     public double area(){
@@ -46,4 +47,7 @@ public static void main(String[] args) {
     sort(v);
 
     print(v);
+}
+
+void main() {
 }
