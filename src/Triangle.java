@@ -6,6 +6,7 @@ public class Triangle extends Shape{
         this.h = b;
     }
 
+
     public double area() {
         return ((this.ba*this.h)/2);
     }
