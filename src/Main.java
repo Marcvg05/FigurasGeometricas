@@ -40,6 +40,17 @@ public class Circle extends Shape{
         return math.pi*math.pow(r,2);
     }
 }
+
+public class Triangle extends Shape{
+    private double ba,h;
+
+    public double Triangle(double a, double b){
+        this.ba = a;
+        this.h = b;
+    }
+
+    public double area() {return (this.ba*this.h)/2;}
+}
 public static void main(String[] args) {
     Shape[] v = new Shape[4];
 
