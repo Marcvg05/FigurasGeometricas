@@ -1,4 +1,4 @@
-import math;
+import java.lang.math;
 
 public abstract class Shape{
     public abstract double area();
@@ -44,7 +44,7 @@ public class Circle extends Shape{
 public class Triangle extends Shape{
     private double ba,h;
 
-    public double Triangle(double a, double b){
+    public Triangle(double a, double b){
         this.ba = a;
         this.h = b;
     }
