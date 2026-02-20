@@ -1,3 +1,4 @@
+
 public static void main(String[] args) {
     Shape[] v = new Shape[4];
 
@@ -32,5 +33,8 @@ private static void sort(Shape[] v) {
 }
 
 private static void print(Shape[] v) {
+    for (Shape s : v){
+        System.out.println(s.area());
+    }
 }
 
