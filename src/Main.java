@@ -1,58 +1,3 @@
-import math;
-
-public abstract class Shape{
-    public abstract double area();
-
-    public void sort(Shape[] v){
-        Arrays.sort(v);
-    }
-
-
-}
-
-public class Rectangle extends Shape{
-    private double L1, L2;
-
-    public Rectangle(double a, double b){
-        this.L1=a;
-        this.L2=b;
-
-    }
-
-    public double area(){
-        return this.L1*this.L2;
-    }
-}
-
-public class Square extends Rectangle{
-    public Square(double l){
-        super(l,l); //manda a la clase superior el cuadrado
-    }
-}
-
-public class Circle extends Shape{
-    private double r;
-
-    public Circle(double rad){
-        this.r=rad;
-    }
-
-    public double area(){
-        return math.pi*math.pow(r,2);
-    }
-}
-
-public class Triangle extends Shape{
-    private double ba,h;
-
-    public double Triangle(double a, double b){
-        this.ba = a;
-        this.h = b;
-    }
-
-    public double area() {return (this.ba*this.h)/2;}
-}
-
 public static void main(String[] args) {
     Shape[] v = new Shape[4];
 
@@ -72,5 +17,20 @@ public static void main(String[] args) {
     print(v);
 }
 
-void main() {
+private static double sum(Shape[] v) {
+
+    double sum = 0;
+
+    for (int i = 0; i < v.length; i++) {
+        sum += v[i].area();
+    }
+
+    return sum;
 }
+
+private static void sort(Shape[] v) {
+}
+
+private static void print(Shape[] v) {
+}
+
