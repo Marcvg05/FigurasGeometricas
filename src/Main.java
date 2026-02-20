@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Comparator;
 public static void main(String[] args) {
     Shape[] v = new Shape[4];
 
@@ -18,10 +20,22 @@ public static void main(String[] args) {
 }
 
 private static double sum(Shape[] v) {
+
+    double sum = 0;
+
+    for (int i = 0; i < v.length; i++) {
+        sum += v[i].area();
+    }
+
+    return sum;
 }
 
-private static void sort(Shape[] v) {
+public static void sort(Shape[] v) {
+    Arrays.sort(v, Comparator.comparingDouble(Shape::area));
 }
 
 private static void print(Shape[] v) {
+    for (Shape s : v){
+        System.out.println(s.area());
+    }
 }
