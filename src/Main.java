@@ -51,6 +51,7 @@ public class Triangle extends Shape{
 
     public double area() {return (this.ba*this.h)/2;}
 }
+
 public static void main(String[] args) {
     Shape[] v = new Shape[4];
 
