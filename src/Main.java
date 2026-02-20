@@ -26,6 +26,6 @@ private static void sort(Shape[] v) {
 
 private static void print(Shape[] v) {
     for (Shape s : v){
-        System.out.printIn(s.area());
+        System.out.println(s.area());
     }
 }
